@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">medico</string>
+    <string name="title_activity_medicine_list">MedicineList</string>
+    <string-array name="rem_time">
+        <item>once a day</item>
+        <item>twice a day</item>
+        <item>thrice a day</item>
+        <item>four times a day</item>
+    </string-array>
+
+</resources>
