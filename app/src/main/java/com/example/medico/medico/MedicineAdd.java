@@ -35,6 +35,8 @@ public class MedicineAdd extends AppCompatActivity implements AdapterView.OnItem
 
         this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
 
+        //update for git
+
         //Start of code for spinner for reminder
 
         Spinner spinner = findViewById(R.id.spinnerRem);
