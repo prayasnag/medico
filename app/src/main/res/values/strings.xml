@@ -1,6 +1,15 @@
 <resources>
     <string name="app_name">medico</string>
     <string name="title_activity_medicine_list">MedicineList</string>
+    <string name="colorHint">Enter color to identify</string>
+    <string name="shapeHint">Enter shape to identify</string>
+    <string name="doctor">Doctor</string>
+    <string name="hintDoc">Enter doctor\'s name</string>
+    <string name="inst">Instructions</string>
+    <string name="instWith">with food</string>
+    <string name="instBefore">before food</string>
+    <string name="instAfter">after food</string>
+    <string name="saveBtnTxt">save</string>
     <string-array name="rem_time">
         <item>once a day</item>
         <item>twice a day</item>

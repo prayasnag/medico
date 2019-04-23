@@ -38,13 +38,13 @@
 
                 <EditText
                     android:id="@+id/editMedName"
-                    android:backgroundTint="@color/colorPrimary"
                     android:layout_width="match_parent"
                     android:layout_height="42dp"
                     android:layout_gravity="start"
                     android:layout_marginBottom="4dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/colorPrimary"
                     android:ems="10"
                     android:hint="type Brand name or identification"
                     android:inputType="textPersonName" />
@@ -82,48 +82,50 @@
                     android:textSize="24sp" />
 
                 <Spinner
-                    android:layout_marginTop="10dp"
+                    android:id="@+id/spinnerRem"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:id="@+id/spinnerRem">
-                </Spinner>
+                    android:layout_marginTop="10dp"></Spinner>
 
                 <TextView
                     android:id="@+id/timeOne"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="5dp"
                     android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
                     android:text="08:00"
-                    android:textSize="24sp"
-                    android:textColor="@color/colorPrimary" />
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="24sp" />
+
                 <TextView
                     android:id="@+id/timeTwo"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="5dp"
                     android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
                     android:text="12:00"
-                    android:textSize="24sp"
-                    android:textColor="@color/colorPrimary" />
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="24sp" />
+
                 <TextView
                     android:id="@+id/timeThree"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="5dp"
                     android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
                     android:text="18:00"
-                    android:textSize="24sp"
-                    android:textColor="@color/colorPrimary" />
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="24sp" />
+
                 <TextView
                     android:id="@+id/timeFour"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="5dp"
                     android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
                     android:text="22:00"
-                    android:textSize="24sp"
-                    android:textColor="@color/colorPrimary" />
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="24sp" />
 
 
             </LinearLayout>
@@ -156,104 +158,120 @@
                     android:text="Schedule"
                     android:textColor="@color/colorPrimary"
                     android:textSize="24sp" />
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="10dp">
-                <TextView
-                    android:layout_weight="1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="start"
-                    android:text="Start Date:"
-                    android:textColor="@color/colorText"
-                    android:textSize="16dp" />
-                <TextView
-                    android:id="@+id/StartDate"
-                    android:layout_weight="0"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_gravity="start"
-                    android:text=""
-                    android:textColor="@color/colorPrimary"
-                    android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_weight="1"
+                        android:text="Start Date:"
+                        android:textColor="@color/colorText"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/StartDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0"
+                        android:clickable="true"
+                        android:text=""
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
                 </LinearLayout>
+
                 <View
-                    android:layout_marginTop="4dp"
-                    android:layout_marginBottom="4dp"
                     android:layout_width="fill_parent"
                     android:layout_height="2dp"
-                    android:background="#c0c0c0"/>
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+                    android:background="#c0c0c0" />
+
                 <TextView
-                    android:layout_marginTop="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="start"
+                    android:layout_marginTop="10dp"
                     android:text="Duration:"
                     android:textColor="@color/colorText"
                     android:textSize="16sp" />
+
                 <RadioGroup
                     android:id="@+id/radioDuration"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
-                     <RadioButton
-                         android:id="@+id/radioDurationCont"
-                         android:layout_width="match_parent"
-                         android:layout_height="match_parent"
-                         android:checked="true"
-                         android:buttonTint="@color/colorPrimaryDark"
-                         android:text="continuous"/>
+
+                    <RadioButton
+                        android:id="@+id/radioDurationCont"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:buttonTint="@color/colorPrimaryDark"
+                        android:checked="true"
+                        android:text="continuous" />
+
                     <RadioButton
                         android:id="@+id/radioDurationDays"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:buttonTint="@color/colorPrimaryDark"
-                        android:text="number of days"/>
+                        android:text="number of days" />
                 </RadioGroup>
+
                 <View
-                    android:layout_marginTop="4dp"
-                    android:layout_marginBottom="4dp"
                     android:layout_width="fill_parent"
                     android:layout_height="2dp"
-                    android:background="#c0c0c0"/>
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+                    android:background="#c0c0c0" />
+
                 <TextView
-                    android:layout_marginTop="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="start"
+                    android:layout_marginTop="10dp"
                     android:text="Days:"
                     android:textColor="@color/colorText"
                     android:textSize="16sp" />
+
                 <RadioGroup
                     android:id="@+id/radioDays"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
+
                     <RadioButton
                         android:id="@+id/radioDaysEveryDay"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:checked="true"
                         android:buttonTint="@color/colorPrimaryDark"
-                        android:text="Every Day"/>
+                        android:checked="true"
+                        android:text="Every Day" />
+
                     <RadioButton
                         android:id="@+id/radioDaysSpecific"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:buttonTint="@color/colorPrimaryDark"
-                        android:text="Specific days of week"/>
+                        android:text="Specific days of week" />
+
                     <RadioButton
                         android:id="@+id/radioDaysInterval"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:buttonTint="@color/colorPrimaryDark"
-                        android:text="days interval"/>
+                        android:text="days interval" />
                 </RadioGroup>
             </LinearLayout>
 
         </android.support.v7.widget.CardView>
+
         <android.support.v7.widget.CardView
             android:id="@+id/cardView4"
             android:layout_width="match_parent"
@@ -282,32 +300,34 @@
 
                 <EditText
                     android:id="@+id/MedColor"
-                    android:textSize="16sp"
-                    android:layout_width="match_parent"
-                    android:layout_height="42dp"
-                    android:layout_gravity="left"
-                    android:layout_marginBottom="4dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginTop="10dp"
-                    android:ems="10"
-                    android:backgroundTint="@color/colorPrimary"
-                    android:hint="Enter color to identify"
-                    android:inputType="textPersonName"/>
-                <EditText
-                    android:id="@+id/MedShape"
-                    android:textSize="16sp"
                     android:layout_width="match_parent"
                     android:layout_height="42dp"
                     android:layout_gravity="start"
                     android:layout_marginBottom="4dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginTop="10dp"
-                    android:ems="10"
                     android:backgroundTint="@color/colorPrimary"
+                    android:ems="10"
+                    android:hint="Enter color to identify"
+                    android:inputType="textPersonName"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/MedShape"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_gravity="start"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:ems="10"
                     android:hint="Enter shape to identify"
-                    android:inputType="textPersonName"/>
+                    android:inputType="textPersonName"
+                    android:textSize="16sp" />
             </LinearLayout>
         </android.support.v7.widget.CardView>
+
         <android.support.v7.widget.CardView
             android:id="@+id/cardView5"
             android:layout_width="match_parent"
@@ -336,20 +356,21 @@
 
                 <EditText
                     android:id="@+id/DoctorName"
-                    android:textSize="16sp"
                     android:layout_width="match_parent"
                     android:layout_height="42dp"
-                    android:layout_gravity="left"
+                    android:layout_gravity="start"
                     android:layout_marginBottom="4dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginTop="10dp"
-                    android:ems="10"
                     android:backgroundTint="@color/colorPrimary"
+                    android:ems="10"
                     android:hint="Enter doctor's name"
-                    android:inputType="textPersonName"/>
+                    android:inputType="textPersonName"
+                    android:textSize="16sp" />
 
             </LinearLayout>
         </android.support.v7.widget.CardView>
+
         <android.support.v7.widget.CardView
             android:id="@+id/cardView6"
             android:layout_width="match_parent"
@@ -375,44 +396,49 @@
                     android:text="Instructions"
                     android:textColor="@color/colorPrimary"
                     android:textSize="24sp" />
+
                 <RadioGroup
-                    android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
                     android:orientation="vertical">
+
                     <RadioButton
                         android:id="@+id/radioInstBefore"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:checked="true"
                         android:buttonTint="@color/colorPrimaryDark"
-                        android:text="before food"/>
+                        android:checked="true"
+                        android:text="before food" />
+
                     <RadioButton
                         android:id="@+id/radioInstWith"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:buttonTint="@color/colorPrimaryDark"
-                        android:text="with food"/>
+                        android:text="with food" />
+
                     <RadioButton
                         android:id="@+id/radioInstAfter"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:buttonTint="@color/colorPrimaryDark"
-                        android:text="after food"/>
+                        android:text="after food" />
                 </RadioGroup>
 
 
             </LinearLayout>
         </android.support.v7.widget.CardView>
+
         <Button
             android:id="@+id/addMedBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/colorPrimaryDark"
-            android:text="save"
             android:layout_gravity="end"
+            android:layout_marginBottom="20dp"
             android:layout_marginEnd="20dp"
-            android:layout_marginBottom="20dp"/>
+            android:background="@color/colorPrimaryDark"
+            android:text="save" />
 
     </LinearLayout>
 
