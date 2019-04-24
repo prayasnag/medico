@@ -36,10 +36,6 @@ public class MedicineAdd extends AppCompatActivity implements AdapterView.OnItem
     private TextView mDisplayTime2;
     private TextView mDisplayTime3;
     private TextView mDisplayTime4;
-    private DatePickerDialog.OnDateSetListener mTimeSetListener1;
-    private DatePickerDialog.OnDateSetListener mTimeSetListener2;
-    private DatePickerDialog.OnDateSetListener mTimeSetListener3;
-    private DatePickerDialog.OnDateSetListener mTimeSetListener4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -13,6 +13,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity{
 
     ImageButton androidBtn1;
+    ImageButton androidBtn2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,10 +24,18 @@ public class MainActivity extends AppCompatActivity{
         androidBtn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Toast.makeText(MainActivity.this, "good job",Toast.LENGTH_LONG).show();
                 startActivity(new Intent(MainActivity.this,MedicineLIst.class));
             }
         });
+
+        androidBtn2 = (ImageButton) findViewById(R.id.button4);
+        androidBtn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this,MyStats.class));
+            }
+        });
+
 
 
 
