@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="20dp">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Medicine Name"
+            android:textColor="#1c1c1c"
+            android:layout_margin="4dp"
+            android:textSize="25sp"
+            android:id="@+id/title"
+            android:layout_toLeftOf="@+id/type"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Shape and Color"
+            android:textSize="17sp"
+            android:id="@+id/type"
+            android:layout_column="71"
+            android:textColor="#878787"
+            android:layout_weight="0.24"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Doctor Name"
+            android:textColor="#878787"
+            android:layout_margin="4dp"
+            android:textSize="15sp"
+            android:id="@+id/Detail"
+            android:layout_weight="0.73"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/alarmImage"
+            android:layout_toLeftOf="@+id/alarmImage" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/alarmImage"
+            android:layout_gravity="right"
+            android:src="@drawable/ic_action_alarms"
+            android:scaleType="fitXY"
+            android:layout_alignBottom="@+id/time"
+            android:layout_toLeftOf="@+id/time"
+            android:layout_toStartOf="@+id/time" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/time"
+            android:text="Alarm Time"
+            android:textSize="15sp"
+            android:layout_marginLeft="4dp"
+            android:textColor="#878787"
+            android:layout_gravity="right"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Instruction"
+        android:id="@+id/date"
+        android:textColor="#878787"
+        android:layout_gravity="right" />
+
+</LinearLayout>
