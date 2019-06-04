@@ -1,6 +1,13 @@
 <resources>
     <string name="app_name">medico</string>
     <string name="title_activity_medicine_list">MedicineList</string>
+    <string-array name="rem_time">
+        <item>once a day</item>
+        <item>twice a day</item>
+        <item>thrice a day</item>
+        <item>four times a day</item>
+    </string-array>
+
     <string name="colorHint">Enter color to identify</string>
     <string name="shapeHint">Enter shape to identify</string>
     <string name="doctor">Doctor</string>
@@ -10,11 +17,139 @@
     <string name="instBefore">before food</string>
     <string name="instAfter">after food</string>
     <string name="saveBtnTxt">save</string>
-    <string-array name="rem_time">
-        <item>once a day</item>
-        <item>twice a day</item>
-        <item>thrice a day</item>
-        <item>four times a day</item>
-    </string-array>
 
+    <string name="title">Test</string>
+    <string name="detail">Small Text</string>
+    <string name="title_activity_information">Information</string>
+
+    <string name="title_activity_edit__note">Edit Note</string>
+
+    <string name="New">Create New Note</string>
+
+    <string name="back">Back to Main</string>
+
+    <string name="save">Save Note</string>
+
+    <string name="edit">Edit Note</string>
+
+    <string name="discard">Discard Note</string>
+
+    <string name="note_type_text">Choose Note Type:</string>
+
+    <string name="title_activity_alert">Alert</string>
+
+    <string name="Not_Set">Not Set</string>
+
+    <string name="hour_minutes">HH:mm</string>
+
+    <string name="alert_title">title</string>
+    <string name="set_notify">Set Notification</string>
+    <string name="added_alert">An Alert can be added</string>
+    <string name="notify">You can recieve notifications</string>
+    <string name="rodId">rowID</string>
+
+    <string name="Alertnotifty">"Alert: "</string>
+
+    <string name="alerttitle">title</string>
+
+    <string name="delete_title">Delete Selected Task</string>
+
+    <string name="delete_message">Are you sure?</string>
+
+    <string name="yes">Yes</string>
+
+    <string name="no">No</string>
+
+    <string name="rodID">rowID</string>
+
+    <string name="rowID">rowID</string>
+
+    <string name="row_id">rowID</string>
+
+    <string name="intent_row_id">rowID</string>
+
+    <string name="row_id_long">rowID</string>
+
+    <string name="alarm_active">An Alert can be added!</string>
+
+    <string name="row_id_log">rowID</string>
+
+    <string name="title_hint">Enter Task</string>
+
+    <string name="hint_description">Enter Task Description</string>
+
+    <string name="set_alert">Set Alert</string>
+
+    <string name="textview_date">Select Date</string>
+
+    <string name="txt_time">Enter Time:</string>
+
+    <string name="txt_edit_hint">Enter Title</string>
+
+    <string name="detail_hint">Enter Description</string>
+
+    <string name="type_note">Note Type:</string>
+
+    <string name="view_title">Large Text</string>
+
+    <string name="view_detail">Medium Text</string>
+
+    <string name="note_type">Medium Text</string>
+
+    <string name="type_list_entry">Small Text</string>
+
+    <string name="time_vie">testtime</string>
+
+    <string name="alarmtext">Alert: </string>
+
+    <string name="dateformate">dd/MM/yyyy</string>
+
+    <string name="Not_Set_Alert">Not Set</string>
+
+    <string name="ok">Ok</string>
+
+    <string name="title_msg">title</string>
+
+    <string name="titttle">title</string>
+    <string name="alert_content">alert_content</string>
+
+    <string name="appo_title">title</string>
+    <string name="appo_doc">appo_doc</string>
+    <string name="appo_location">appo_loc</string>
+
+
+
+
+    <string name="text1">Stop the Bleeding
+Apply direct pressure on the area.
+Clean the area with warm water and gentle soap.
+Apply an antibiotic ointment to reduce chance of infection.
+Put a sterile bandage on the area. In some people, antibiotic ointments may cause a rash. If this happens, stop using the ointment.</string>
+
+    <string name="text2">Control Nausea and Vomiting
+
+Avoid solid foods until vomiting ends. Then eat light, bland foods, such as saltine crackers, bananas, rice, or bread.
+Sipping liquids may help avoid vomiting.
+Don’t eat fried, greasy, spicy, or sweet foods.
+Don’t take anti-nausea or anti-diarrhea medication without asking your doctor. They have side effects and may make some kinds of diarrhea worse. Your doctor may give you anti-nausea medication if you are at risk of being dehydrated.
+Prevent Dehydration. Call doctor as soon as possible.</string>
+
+    <string name="text3">Call doctor urgently if the pain is in your lower right abdomen and tender to the touch, and you also have fever or are vomiting. These may be signs of appendicitis.
+You are vomiting blood.
+You have a hard time breathing. For gas pain, medicine that has the ingredient simethicone (Mylanta, Gas-X) can help get rid of it.
+For heartburn from gastroesophageal reflux disease (GERD), try an antacid or acid reducer (Pepcid AC, Zantac 75).
+For constipation, a mild stool softener or laxative may help get things moving again.</string>
+    <string name="text4">Call emergency helpline and inject epinephrine immediately if the person has
+any of these symptoms:
+
+Trouble breathing or wheezing.
+Tightness in the throat or a feeling that the airways are closing.
+Hives.
+Swelling away from the area of the sting, especially swelling of the face, tongue, or hands.
+Hoarseness or trouble speaking.
+Nausea, abdominal pain, diarrhea, cramps, or vomiting.
+Fast heartbeat or pulse.
+Skin that severely itches, tingles, swells, or turns red.
+Anxiety, feelings of faintness, or dizziness.
+Loss of consciousness.</string>
 </resources>

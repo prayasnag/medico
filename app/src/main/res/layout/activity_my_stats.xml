@@ -56,7 +56,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="start"
                     android:layout_marginTop="20dp"
-                    android:text=""
+                    android:text="0"
                     android:hint="Enter weight by clicking on the plus icon"
                     android:textColor="@color/colorPrimary"
                     android:textSize="16sp" />
@@ -112,6 +112,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="start"
                     android:layout_marginTop="20dp"
+                    android:text="0"
                     android:hint="Enter height by clicking on the plus icon"
                     android:textColor="@color/colorPrimary"
                     android:textSize="16sp" />
@@ -161,6 +162,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="start"
                     android:layout_marginTop="20dp"
+                    android:text="0"
                     android:hint="Enter your height and weight"
                     android:textColor="@color/colorPrimary"
                     android:textSize="16sp" />
@@ -172,11 +174,358 @@
                     android:layout_marginTop="10dp"
                     android:textColor="@color/colorText"
                     android:textSize="18sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp">
+
+                <Button
+                    android:layout_marginLeft="130dp"
+                    android:id="@+id/saveBMI"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" SAVE "
+                    android:textColor="@color/colorWhite"
+                    android:background="@color/colorPrimaryDark"
+                    android:layout_gravity="start"/>
+                <Button
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/clearBMI"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CLEAR"
+                    android:textColor="@color/colorWhite"
+                    android:background="@color/colorPrimaryDark"
+                    android:layout_gravity="end"/>
+                </LinearLayout>
 
 
             </LinearLayout>
 
         </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardStats4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="28dp"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="6dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:text="My Medicine Stats"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="24sp" />
+                    <ImageView
+                        android:id="@+id/collapseStat"
+                        android:clickable="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_gravity="right"
+                        android:src="@drawable/dropdown"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/stats"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp">
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Missed Meds:"
+                        android:textColor="@color/colorText"
+                        android:textSize="16sp" />
+                        <TextView
+                            android:id="@+id/statsMissed"
+                            android:layout_weight="1"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="end"
+                            android:textAlignment="viewEnd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp">
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Meds Stock Alert:"
+                        android:textColor="@color/colorText"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/statsStock"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="end"
+                        android:textAlignment="viewEnd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Available"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp" />
+                </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp">
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="start"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Current Medicines:"
+                            android:textColor="@color/colorText"
+                            android:textSize="16sp" />
+                        <TextView
+                            android:id="@+id/statsMedCount"
+                            android:layout_weight="1"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="end"
+                            android:textAlignment="viewEnd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp">
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Current Appointments:"
+                        android:textColor="@color/colorText"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/statsAppointment"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="end"
+                        android:textAlignment="viewEnd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardStats5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="28dp"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="6dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:text="Vital Stats"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="24sp" />
+                    <ImageView
+                        android:id="@+id/collapseVital"
+                        android:clickable="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_gravity="right"
+                        android:src="@drawable/dropdown"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/vital"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp">
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="start"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Blood Pressure:"
+                            android:textColor="@color/colorText"
+                            android:textSize="16sp" />
+                        <EditText
+                            android:id="@+id/bloodPressure"
+                            android:layout_weight="1"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="end"
+                            android:textAlignment="viewEnd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:inputType="numberDecimal"
+                            android:text="0"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp">
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="start"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Blood Glucose"
+                            android:textColor="@color/colorText"
+                            android:textSize="16sp" />
+                        <EditText
+                            android:id="@+id/bloodGlucose"
+                            android:layout_weight="1"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="end"
+                            android:textAlignment="viewEnd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:inputType="numberDecimal"
+                            android:text="0"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp">
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="start"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cholesterol    "
+                            android:textColor="@color/colorText"
+                            android:textSize="16sp" />
+                        <EditText
+                            android:id="@+id/cholesterol"
+                            android:layout_weight="1"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="end"
+                            android:textAlignment="viewEnd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:inputType="numberDecimal"
+                            android:text="0"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp">
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="start"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="creatinine      "
+                            android:textColor="@color/colorText"
+                            android:textSize="16sp" />
+                        <EditText
+                            android:id="@+id/creatinine"
+                            android:layout_weight="1"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="end"
+                            android:textAlignment="viewEnd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:inputType="numberDecimal"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                    <Button
+                        android:id="@+id/saveVitals"
+                        android:onClick="addVitals"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SAVE"
+                        android:textColor="@color/colorWhite"
+                        android:background="@color/colorPrimaryDark"
+                        android:layout_gravity="end"/>
+                    <Button
+                        android:id="@+id/sendMail"
+                        android:onClick="addVitals"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SEND MAIL"
+                        android:textColor="@color/colorWhite"
+                        android:background="@color/colorPrimaryDark"
+                        android:layout_gravity="end"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
 
     </LinearLayout>
 
